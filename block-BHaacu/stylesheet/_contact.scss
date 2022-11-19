@@ -1,0 +1,57 @@
+.cont-primary-sec{
+    margin: 0;
+    text-align: center;
+    .headline{
+        h3{
+            color: $secondary;
+        }
+    }
+}
+.cont-info{
+    background-color: $secondary;
+    padding: 4rem 0;
+    color: $text-clr;
+    address{
+        margin-top: 2rem;
+    }
+    div{
+        padding: 1.5rem;
+        h6{
+            color: black;
+            padding: 0.5rem;
+        }
+        i{  color: $primary;
+            font-size: 2.5rem;
+            border-radius:100% ;
+            padding: 1.25rem;
+            background-color:$text-clr;
+        }
+        a{
+            color: $text-clr;
+            text-decoration: none;
+        }
+    }
+}
+
+/* Map */
+.map{
+    .headline{
+        background-color: white;
+        h4{
+            color: black;
+            padding: 1rem 0;
+        }
+    }
+    form{
+        padding: 4rem 0;
+        input,textarea{
+            display: block;
+            border: none;
+            padding: 1rem;
+            margin: 1rem 0;
+            width: 100%;
+            box-shadow: 0 0 5rem 0 rgb(231, 223, 223) ;
+        }
+        
+    }
+}
