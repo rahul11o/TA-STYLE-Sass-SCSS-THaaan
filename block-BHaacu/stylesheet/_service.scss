@@ -1,0 +1,56 @@
+.product{
+    background-color: $secondary;
+    padding-bottom: 8rem;
+    .headline{
+        background-color: $secondary;
+        h4{
+            color: black;
+        }
+    }
+    .mini-art{
+        img{
+            width: 20%;
+        }
+        padding: 1.25rem 0;
+        h6{
+            padding: 1rem 0 0 0;
+            margin: 0;
+        }
+    }
+}
+.srvc-section{
+    padding: 0
+}
+.oth-srvc-article{
+   
+    @extend  .oth-abt-article;
+   padding: 3rem 2rem;
+   h6{
+    color: $secondary;
+   }
+   .btn {
+    background-color: $primary;
+    border: 1px solid $text-clr;
+       a{
+         color: $text-clr;
+       }
+   }
+   background-color: $primary;
+}
+.oth-srvc-article-2{
+    @extend .oth-srvc-article;
+    background-color: white;
+    padding: 5rem 2rem;
+}
+.oth-srvc-article-3{
+    @extend .oth-srvc-article-2;
+    padding: 2rem 0 8rem 0;
+    div{
+        h4{
+            padding: 2rem 0;
+        }
+        img{
+            width: 25%;
+        }
+    }
+}

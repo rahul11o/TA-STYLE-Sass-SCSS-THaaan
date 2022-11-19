@@ -1,0 +1,113 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+}
+body{
+    font-size: 1rem;
+    line-height: 1.5;
+    font-family:$font;
+}
+
+/* container */
+.container{
+    max-width: 100%;
+    padding: 0 2rem ;
+}
+/* Headings */
+h1{
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+h2{
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+h3{
+    font-size: 3rem;
+    font-weight: 700;
+}
+h4{
+    font-size: 2.5rem;
+    font-weight: 800;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+h5{
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+h6{
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+/* FlexBox */
+
+.flex-alone{
+    display: flex;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+.flex-center{
+    justify-content: center;
+}
+.flex-start{
+    justify-content: flex-start;
+}
+.alitems-center{
+    align-items: center;
+}
+.wrap{
+    flex-wrap: wrap;
+}
+
+/* flex-items */
+
+.flex-45{
+    flex: 0 1 45%;
+}
+.flex-80{
+    flex: 0 1 80%;
+   
+}
+.flex-15{
+    flex: 0 1 15%;
+}
+
+
+/* Position */
+.relative{
+    display: block;
+    position: relative;
+}
+
+/* text-align */
+.txt-alg-cen{
+    text-align: center;
+}
+/* Button */
+
+.btn{
+    padding: 0.75rem 2rem;
+    border-radius: 2rem;
+    font-size: 1.5rem;
+    border: 1px solid $primary;
+    background-color: white;
+    a{
+        text-decoration: none;
+        display: inline-block;
+        color: red;
+        text-transform: capitalize;
+    }
+  }
+/* width-100 */
+  .width-100{
+    width: 100%;
+   }
