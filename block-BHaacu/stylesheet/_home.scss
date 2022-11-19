@@ -1,0 +1,114 @@
+.hero-section{
+    padding-bottom: 5rem;
+    position: relative;
+}
+
+.hero-section article{
+    // position:relative;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 52rem;
+    overflow: hidden;
+    img{
+        position: absolute;
+        height: 100%;
+        right: -12rem;
+        top: 0;
+     }
+     div{
+        position: absolute;
+        padding-left: 1rem;
+        top: 30%;
+        p{
+            font-size: 1.75rem;
+            text-transform: capitalize;
+            padding: 1.25rem 0 2.25rem 0;
+        }
+        button{
+            background-color: $primary;
+            a{
+                color: $text-clr;
+            }
+        }
+      }
+}
+
+/* Service-Section */
+
+.service-section{
+   margin-top: 55rem;
+   text-align: center;
+   header p{
+    font-size: 1.5rem;
+    padding: 1.25rem  0 3rem 0;
+    color: $text-clr;
+   }
+}
+.srvc-article{
+    // border: 1px solid $text-clr;
+    padding: 3rem 1.25rem;
+    margin-bottom: 3rem;
+    border-radius: 1rem;
+    box-shadow: 0rem 0rem 1rem 0rem rgb(176, 169, 169);
+    img{
+        width: 25%;
+        padding: 1rem;
+    }
+    p{
+        font-size:1.25rem ;
+        color: $text-clr;
+        padding: 1rem 0 2.5rem 0;
+    }
+}
+
+/* other-section */
+
+.other-section{
+    text-align: center;
+   
+}
+.sol-article{
+    line-height: 1.5;
+    background-color: $secondary;
+    padding: 7rem 3.25rem;
+    p{
+        font-size: 1.5rem;
+        color: $text-clr;
+        padding: 1rem 0 2rem 0;
+    }
+}
+.top-article{
+    @extend .sol-article;
+    img{
+        width: 100%;
+        padding-top: 2rem;
+    }
+    background-color: white;
+    div img{
+        width: 25%;
+         padding: 1rem;
+    }
+}
+.req-article{
+    @extend .sol-article;
+    padding: 3rem ;
+    h5{
+        color: rgb(240, 231, 231);
+    }
+    background-color: $primary;
+}
+.wom-article{
+    @extend .top-article;
+    text-align: start;
+    padding-bottom: 0;
+}
+.clients{
+    padding: 8rem 2rem;
+    background-color:$secondary; 
+    img{
+        width: 30%;
+        margin-top: 3rem;
+    }
+}

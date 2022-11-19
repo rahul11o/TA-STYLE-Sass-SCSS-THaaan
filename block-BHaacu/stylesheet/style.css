@@ -1,0 +1,627 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-size: 1rem;
+  line-height: 1.5;
+  font-family: "Archivo", sans-serif;
+}
+
+/* container */
+.container {
+  max-width: 100%;
+  padding: 0 2rem;
+}
+
+/* Headings */
+h1 {
+  font-size: 4rem;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+h2 {
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+h5 {
+  font-size: 2rem;
+  text-transform: capitalize;
+}
+
+h6 {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  font-weight: 700;
+}
+
+/* FlexBox */
+.flex-alone {
+  display: flex;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-center {
+  justify-content: center;
+}
+
+.flex-start {
+  justify-content: flex-start;
+}
+
+.alitems-center {
+  align-items: center;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+/* flex-items */
+.flex-45 {
+  flex: 0 1 45%;
+}
+
+.flex-80 {
+  flex: 0 1 80%;
+}
+
+.flex-15 {
+  flex: 0 1 15%;
+}
+
+/* Position */
+.relative {
+  display: block;
+  position: relative;
+}
+
+/* text-align */
+.txt-alg-cen {
+  text-align: center;
+}
+
+/* Button */
+.btn {
+  padding: 0.75rem 2rem;
+  border-radius: 2rem;
+  font-size: 1.5rem;
+  border: 1px solid rgb(220, 59, 69);
+  background-color: white;
+}
+.btn a {
+  text-decoration: none;
+  display: inline-block;
+  color: red;
+  text-transform: capitalize;
+}
+
+/* width-100 */
+.width-100 {
+  width: 100%;
+}
+
+.hero-section {
+  padding-bottom: 5rem;
+  position: relative;
+}
+
+.hero-section article {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 52rem;
+  overflow: hidden;
+}
+.hero-section article img {
+  position: absolute;
+  height: 100%;
+  right: -12rem;
+  top: 0;
+}
+.hero-section article div {
+  position: absolute;
+  padding-left: 1rem;
+  top: 30%;
+}
+.hero-section article div p {
+  font-size: 1.75rem;
+  text-transform: capitalize;
+  padding: 1.25rem 0 2.25rem 0;
+}
+.hero-section article div button {
+  background-color: rgb(220, 59, 69);
+}
+.hero-section article div button a {
+  color: rgb(189, 190, 190);
+}
+
+/* Service-Section */
+.service-section {
+  margin-top: 55rem;
+  text-align: center;
+}
+.service-section header p {
+  font-size: 1.5rem;
+  padding: 1.25rem 0 3rem 0;
+  color: rgb(189, 190, 190);
+}
+
+.srvc-article {
+  padding: 3rem 1.25rem;
+  margin-bottom: 3rem;
+  border-radius: 1rem;
+  box-shadow: 0rem 0rem 1rem 0rem rgb(176, 169, 169);
+}
+.srvc-article img {
+  width: 25%;
+  padding: 1rem;
+}
+.srvc-article p {
+  font-size: 1.25rem;
+  color: rgb(189, 190, 190);
+  padding: 1rem 0 2.5rem 0;
+}
+
+/* other-section */
+.other-section {
+  text-align: center;
+}
+
+.sol-article, .oth-abt-article, .oth-srvc-article, .oth-srvc-article-2, .oth-srvc-article-3, .req-article, .top-article, .wom-article {
+  line-height: 1.5;
+  background-color: rgb(248, 249, 250);
+  padding: 7rem 3.25rem;
+}
+.sol-article p, .oth-abt-article p, .oth-srvc-article p, .oth-srvc-article-2 p, .oth-srvc-article-3 p, .req-article p, .top-article p, .wom-article p {
+  font-size: 1.5rem;
+  color: rgb(189, 190, 190);
+  padding: 1rem 0 2rem 0;
+}
+
+.top-article, .wom-article {
+  background-color: white;
+}
+.top-article img, .wom-article img {
+  width: 100%;
+  padding-top: 2rem;
+}
+.top-article div img, .wom-article div img {
+  width: 25%;
+  padding: 1rem;
+}
+
+.req-article {
+  padding: 3rem;
+  background-color: rgb(220, 59, 69);
+}
+.req-article h5 {
+  color: rgb(240, 231, 231);
+}
+
+.wom-article {
+  text-align: start;
+  padding-bottom: 0;
+}
+
+.clients, .oth-abt-section .container {
+  padding: 8rem 2rem;
+  background-color: rgb(248, 249, 250);
+}
+.clients img, .oth-abt-section .container img {
+  width: 30%;
+  margin-top: 3rem;
+}
+
+.abt-section {
+  font-size: 1.25rem;
+  padding-bottom: 7rem;
+}
+
+.about-art {
+  padding: 7rem 2rem;
+}
+.about-art div h5 {
+  color: rgb(220, 59, 69);
+}
+.about-art div h4 {
+  padding: 1.5rem 0;
+}
+.about-art div p {
+  font-size: 1.25rem;
+  color: rgb(189, 190, 190);
+}
+
+.mini-art {
+  padding: 0.75rem 0;
+}
+.mini-art div p {
+  padding: 1rem 0;
+  color: rgb(189, 190, 190);
+}
+.mini-art i {
+  font-size: 5rem;
+  color: rgb(52, 58, 63);
+}
+
+.gallery-section {
+  text-align: center;
+  background-color: rgb(248, 249, 250);
+  padding-bottom: 4rem;
+}
+.gallery-section .headline {
+  background-color: rgb(248, 249, 250);
+}
+.gallery-section .headline h2, .gallery-section .headline p {
+  color: black;
+}
+
+.gallery-cont div {
+  margin: 4rem 0;
+}
+.gallery-cont div p {
+  padding: 2rem 0;
+  font-size: 1.75rem;
+  box-shadow: 0 0 1rem 0 rgb(238, 233, 233);
+}
+.gallery-cont div p span {
+  display: block;
+  color: rgb(220, 59, 69);
+  font-size: 1rem;
+}
+
+/* Oth-abt-section */
+.oth-abt-article, .oth-srvc-article, .oth-srvc-article-2, .oth-srvc-article-3 {
+  text-align: center;
+  background-color: white;
+}
+
+.oth-abt-section .container {
+  background-color: rgb(248, 249, 250);
+  text-align: center;
+}
+
+.product {
+  background-color: rgb(248, 249, 250);
+  padding-bottom: 8rem;
+}
+.product .headline {
+  background-color: rgb(248, 249, 250);
+}
+.product .headline h4 {
+  color: black;
+}
+.product .mini-art {
+  padding: 1.25rem 0;
+}
+.product .mini-art img {
+  width: 20%;
+}
+.product .mini-art h6 {
+  padding: 1rem 0 0 0;
+  margin: 0;
+}
+
+.srvc-section {
+  padding: 0;
+}
+
+.oth-srvc-article, .oth-srvc-article-2, .oth-srvc-article-3 {
+  padding: 3rem 2rem;
+  background-color: rgb(220, 59, 69);
+}
+.oth-srvc-article h6, .oth-srvc-article-2 h6, .oth-srvc-article-3 h6 {
+  color: rgb(248, 249, 250);
+}
+.oth-srvc-article .btn, .oth-srvc-article-2 .btn, .oth-srvc-article-3 .btn {
+  background-color: rgb(220, 59, 69);
+  border: 1px solid rgb(189, 190, 190);
+}
+.oth-srvc-article .btn a, .oth-srvc-article-2 .btn a, .oth-srvc-article-3 .btn a {
+  color: rgb(189, 190, 190);
+}
+
+.oth-srvc-article-2, .oth-srvc-article-3 {
+  background-color: white;
+  padding: 5rem 2rem;
+}
+
+.oth-srvc-article-3 {
+  padding: 2rem 0 8rem 0;
+}
+.oth-srvc-article-3 div h4 {
+  padding: 2rem 0;
+}
+.oth-srvc-article-3 div img {
+  width: 25%;
+}
+
+.cont-primary-sec {
+  margin: 0;
+  text-align: center;
+}
+.cont-primary-sec .headline h3 {
+  color: rgb(248, 249, 250);
+}
+
+.cont-info {
+  background-color: rgb(248, 249, 250);
+  padding: 4rem 0;
+  color: rgb(189, 190, 190);
+}
+.cont-info address {
+  margin-top: 2rem;
+}
+.cont-info div {
+  padding: 1.5rem;
+}
+.cont-info div h6 {
+  color: black;
+  padding: 0.5rem;
+}
+.cont-info div i {
+  color: rgb(220, 59, 69);
+  font-size: 2.5rem;
+  border-radius: 100%;
+  padding: 1.25rem;
+  background-color: rgb(189, 190, 190);
+}
+.cont-info div a {
+  color: rgb(189, 190, 190);
+  text-decoration: none;
+}
+
+/* Map */
+.map .headline {
+  background-color: white;
+}
+.map .headline h4 {
+  color: black;
+  padding: 1rem 0;
+}
+.map form {
+  padding: 4rem 0;
+}
+.map form input, .map form textarea {
+  display: block;
+  border: none;
+  padding: 1rem;
+  margin: 1rem 0;
+  width: 100%;
+  box-shadow: 0 0 5rem 0 rgb(231, 223, 223);
+}
+
+/* main */
+main {
+  margin-top: 11rem;
+}
+main .headline {
+  background-color: rgb(220, 59, 69);
+  text-align: center;
+  padding: 2.75rem 0;
+  color: rgb(189, 190, 190);
+  font-size: 1.25rem;
+}
+main .headline h2 {
+  color: rgb(248, 249, 250);
+  padding: 0.5rem;
+}
+
+/* header */
+.navbar {
+  top: 0;
+  left: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+
+.cont-navlink {
+  background-color: rgb(220, 59, 69);
+  padding: 0.75rem 0;
+  color: rgb(189, 190, 190);
+}
+.cont-navlink a {
+  text-decoration: none;
+  color: rgb(189, 190, 190);
+}
+.cont-navlink ul li a, .cont-navlink address div i {
+  color: rgb(240, 231, 231);
+}
+.cont-navlink ul li {
+  margin: 0rem 0.75rem;
+}
+.cont-navlink address div {
+  margin: 0.25rem 0.5rem;
+}
+
+.brand-navlink {
+  background-color: rgb(248, 249, 250);
+  padding: 2.5rem;
+  position: relative;
+}
+.brand-navlink a {
+  text-decoration: none;
+  text-transform: capitalize;
+}
+.brand-navlink > a:first-child {
+  color: rgb(220, 59, 69);
+  font-size: 2rem;
+  font-weight: 800;
+  position: absolute;
+  left: 2rem;
+  top: 1rem;
+}
+.brand-navlink span {
+  color: black;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+#toggle, .menu {
+  display: none;
+}
+
+#toggle:checked ~ .menu {
+  display: block;
+  position: absolute;
+  left: 0rem;
+  top: 5rem;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(131, 78, 78, 0.9);
+  padding: 2rem;
+}
+#toggle:checked ~ .menu li {
+  margin: 2.5rem 0;
+  font-size: 1.25rem;
+}
+#toggle:checked ~ .menu li a {
+  color: black;
+}
+#toggle:checked ~ .menu li:nth-child(4),
+#toggle:checked ~ .menu li:nth-child(5) {
+  position: relative;
+}
+#toggle:checked ~ .menu li:nth-child(4) ul,
+#toggle:checked ~ .menu li:nth-child(5) ul {
+  display: none;
+}
+#toggle:checked ~ .menu li:nth-child(4)::after,
+#toggle:checked ~ .menu li:nth-child(5)::after {
+  font: var(--fa-font-solid);
+  content: "\f078";
+  position: absolute;
+  top: 0.25rem;
+  left: 4.5rem;
+}
+#toggle:checked ~ .menu li:nth-child(4):hover ul,
+#toggle:checked ~ .menu li:nth-child(5):hover ul {
+  display: block;
+}
+
+.fa-bars {
+  position: absolute;
+  z-index: 2;
+  right: 2rem;
+  top: 1.25rem;
+  font-size: 1.25rem;
+  background-color: rgb(220, 59, 69);
+  padding: 0.5rem 0.75rem;
+  color: rgb(189, 190, 190);
+  border-radius: 0.25rem;
+}
+
+/* Footer */
+.footer {
+  color: rgb(189, 190, 190);
+  background-color: rgb(52, 58, 63);
+  padding: 5rem 2rem;
+  font-size: 1.25rem;
+}
+.footer a, .footer i {
+  color: rgb(189, 190, 190);
+  margin: 0.75rem 0;
+  text-decoration: none;
+  display: inline-block;
+  margin-left: 0.25rem;
+}
+.footer nav div {
+  padding-top: 3rem;
+}
+.footer small {
+  color: rgb(189, 190, 190);
+  text-align: center;
+  margin-top: 2rem;
+  display: block;
+}
+.footer small span {
+  display: block;
+  padding: 0.25rem;
+}
+.footer small span:first-child {
+  color: rgb(248, 249, 250);
+}
+.footer h6 {
+  margin-bottom: 1.5rem;
+  color: rgb(248, 249, 250);
+}/*# sourceMappingURL=style.css.map */
